@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    color: #ffffff; /* Cor do texto */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #83C5BE;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    color: #333333; /* Cor do texto do header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 60px; /* Espaço para compensar o header fixo */
+    padding: 20px;
+    max-width: 800px; /* Ajuste conforme necessário */
+}
+
+section {
+    background-color: #444444; /* Fundo das seções */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #006D77; /* Cor dos títulos */
+}
+
+h3 {
+    color: #83C5BE; /* Cor dos subtítulos */
+}
+
+p {
+    line-height: 1.6;
+}
+
+button, a.big-button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #006D77;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+a.big-button:hover {
+    background-color: #83C5BE;
+}
+
+/* Estilo do botão de Voltar */
+.back-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #006D77;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #83C5BE;
+}

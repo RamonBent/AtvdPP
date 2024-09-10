@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Patterns</title>
+    <link rel="stylesheet" href="comport.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Padrões Comportamentais
+        </h1>
+        <button class="back-button" onclick="window.history.back()">&#8592; Voltar</button>
+    </header>
+    <main>
+        
+        <section id="state">
+            <h2>State</h2>
+            <p>O padrão State permite que um objeto altere seu comportamento quando seu estado interno muda. Em vez de um grande bloco de if ou switch para gerenciar estados, o objeto delega o comportamento para classes que representam esses estados.</p>
+            <h3>Dica:</h3>
+            <p>Use quando o comportamento de um objeto muda frequentemente com base no seu estado, como uma máquina de vendas ou um pedido de e-commerce com diferentes estágios (pendente, pago, enviado).</p>
+        </section>
+
+        <section id="strategy">
+            <h2>Strategy</h2>
+            <p>O Strategy permite definir uma família de algoritmos, encapsulá-los e torná-los intercambiáveis. Ele separa o algoritmo do contexto que o utiliza, possibilitando que o comportamento varie de acordo com a necessidade sem modificar o cliente.</p>
+            <h3>Dica:</h3>
+            <p>Use quando você quer oferecer várias maneiras de realizar uma tarefa, como diferentes formas de cálculo de frete, e precisa trocar dinamicamente entre elas.</p>
+        </section>
+
+        <section id="template-method">
+            <h2>Template Method</h2>
+            <p>O Template Method define a estrutura de um algoritmo, permitindo que subclasses alterem etapas específicas do processo sem modificar o comportamento geral. O método principal esboça o algoritmo, enquanto os métodos específicos são implementados nas subclasses.</p>
+            <h3>Dica:</h3>
+            <p>Útil quando você quer que partes de um algoritmo sejam definidas por subclasses, como o fluxo de trabalho de um sistema de aprovação que varia por departamento.</p>
+        </section>
+
+        <section id="visitor">
+            <h2>Visitor</h2>
+            <p>O padrão Visitor permite adicionar novas operações a objetos sem modificar suas classes. Ele separa o algoritmo da estrutura de objetos, facilitando a introdução de novas funcionalidades sem alterar o código dos objetos que participam da operação.</p>
+            <h3>Dica:</h3>
+            <p>Use quando precisa executar várias operações em uma estrutura complexa de objetos (como uma árvore de expressões ou uma coleção de elementos) e não quer modificar suas classes.</p>
+        </section>
+
+        <section id="observer">
+            <h2>Observer</h2>
+            <p>O Observer define uma dependência um-para-muitos entre objetos, onde mudanças no estado de um objeto (o sujeito) são automaticamente notificadas para todos os seus observadores.</p>
+            <h3>Dica:</h3>
+            <p>Ideal para cenários onde você precisa de uma notificação automática de mudanças, como sistemas de eventos, interfaces gráficas ou padrões de publicação/assinatura.</p>
+        </section>
+
+        <section id="memento">
+            <h2>Memento</h2>
+            <p>O Memento captura e armazena o estado interno de um objeto sem violar o encapsulamento, permitindo que você restaure o estado anterior do objeto. Isso é comumente usado em sistemas de "desfazer" ou "voltar no tempo".</p>
+            <h3>Dica:</h3>
+            <p>Útil em editores de texto ou gráficos, onde os usuários podem desfazer mudanças e retornar a um estado anterior sem expor os detalhes internos dos objetos envolvidos.</p>
+        </section>
+        
+        <section id="mediator">
+            <h2>Mediator</h2>
+            <p>O Mediator centraliza a comunicação entre objetos, reduzindo o acoplamento entre eles. Em vez de objetos se comunicarem diretamente entre si, eles se comunicam através de um mediador, que controla a lógica de interação.</p>
+            <h3>Dica:</h3>
+            <p>Use quando muitos objetos precisam interagir, mas você deseja evitar dependências complexas entre eles, como em sistemas de chat ou em painéis de controle de interfaces.</p>
+        </section>
+
+        <section id="iterator">
+            <h2>Iterator</h2>
+            <p>O Iterator permite acessar os elementos de uma coleção de forma sequencial sem expor sua estrutura interna. Ele oferece uma maneira uniforme de percorrer diferentes tipos de coleções.</p>
+            <h3>Dica:</h3>
+            <p>Use quando quiser fornecer uma maneira padrão de percorrer coleções (listas, conjuntos, árvores), sem revelar como essas coleções são implementadas.</p>
+        </section>
+
+        <section id="command">
+            <h2>Command</h2>
+            <p> O Command encapsula uma solicitação como um objeto, permitindo que o cliente parametrize outros objetos com diferentes solicitações. Ele também permite que operações sejam enfileiradas, desfeitas ou armazenadas para execução futura.</p>
+            <h3>Dica:</h3>
+            <p>Use para implementar funcionalidades como "desfazer", enfileiramento de tarefas ou histórico de comandos, como em editores de texto ou sistemas de automação de tarefas.</p>
+        </section>
+
+    </main>
+</body>
+</html>

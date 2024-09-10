@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Patterns</title>
+    <link rel="stylesheet" href="estiloestru.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Padrões Estruturais
+        </h1>
+        <button class="back-button" onclick="window.history.back()">&#8592; Voltar</button>
+    </header>
+    <main>
+        
+        <section id="adapter">
+            <h2>Adapter</h2>
+            <p>O padrão Adapter permite que objetos com interfaces incompatíveis colaborem. Ele funciona como um intermediário que adapta a interface de um objeto para que outro objeto possa utilizá-lo. É útil quando queremos integrar componentes de terceiros ou código legado em um sistema sem modificar seu funcionamento original. O Adapter resolve problemas de incompatibilidade de formatos e interfaces, tornando a comunicação entre objetos possível e eficiente. Este padrão pode ser implementado tanto via composição quanto herança, sendo uma solução flexível para cenários onde a alteração direta do código não é viável.</p>
+            <h3>Dica:</h3>
+            <p>Uma dica importante para o padrão Adapter é manter o adaptador o mais simples possível. Ele deve focar apenas na conversão de interfaces ou dados, sem adicionar lógica de negócio. Isso ajuda a garantir que o código seja fácil de manter e que futuras alterações no sistema não exijam modificações significativas no adaptador. Além disso, sempre que possível, projete seu adaptador de forma que ele seja reutilizável para diferentes contextos, permitindo maior flexibilidade no uso de várias classes incompatíveis.</p>
+        </section>
+
+        <section id="bridge">
+            <h2>Bridge</h2>
+            <p>O padrão Bridge é um padrão estrutural que separa a abstração da implementação, permitindo que ambos possam ser desenvolvidos e alterados de forma independente. Ele é útil quando há várias possíveis abstrações e implementações que precisam ser combinadas, pois o Bridge desacopla essas duas dimensões. Em vez de manter uma classe para cada combinação de abstração e implementação, o Bridge permite que você crie uma hierarquia de abstrações e outra de implementações, conectando-as por meio de uma ponte. Isso resulta em um código mais flexível e extensível.</p>
+            <h3>Dica:</h3>
+            <p>Ao implementar o padrão Bridge, uma boa dica é garantir que a hierarquia de abstrações e implementações seja bem planejada e clara. Evite criar muitas camadas desnecessárias, o que pode aumentar a complexidade do código. O foco deve ser manter o código flexível e fácil de manter, possibilitando a adição de novas implementações ou abstrações sem alterar o que já existe. Além disso, use o padrão Bridge quando houver uma verdadeira necessidade de desacoplar a abstração da implementação, pois nem sempre ele é necessário em sistemas mais simples.</p>
+        </section>
+
+        <section id="composite">
+            <h2>Composite</h2>
+            <p>O padrão Composite permite que objetos sejam compostos em estruturas de árvore para representar hierarquias de todo-parte. Ele trata os objetos individuais e suas composições de maneira uniforme, permitindo que o cliente trate tanto objetos simples quanto compostos da mesma maneira. Isso é especialmente útil para modelar estruturas complexas que precisam ser manipuladas de forma recursiva.</p>
+            <h3>Dica:</h3>
+            <p>Use o padrão Composite quando precisar modelar objetos que podem ter uma estrutura hierárquica. Uma dica é garantir que as operações sobre a estrutura de compostos sejam bem definidas e facilmente aplicáveis a objetos individuais e compostos.</p>
+        </section>
+
+        <section id="decorator">
+            <h2>Decorator</h2>
+            <p>O padrão Decorator permite adicionar comportamento a objetos dinamicamente. Ele é usado para estender funcionalidades de objetos sem a necessidade de modificar suas classes ou usar herança. O Decorator envolve o objeto original e adiciona novos comportamentos, mantendo a interface existente.</p>
+            <h3>Dica:</h3>
+            <p>Use quando quiser adicionar funcionalidades de forma flexível, sem alterar a classe base. Dica: evite criar muitos decoradores encadeados, pois isso pode aumentar a complexidade e dificultar a compreensão do comportamento final do objeto.</p>
+        </section>
+
+        <section id="facade">
+            <h2>Facade</h2>
+            <p>O padrão Facade fornece uma interface simplificada para um subsistema complexo. Ele oculta a complexidade do sistema, fornecendo uma interface fácil de usar para o cliente interagir com o sistema inteiro.</p>
+            <h3>Dica:</h3>
+            <p>Implemente o Facade para esconder a complexidade de subsistemas grandes, mas certifique-se de que os usuários avançados ainda tenham acesso às funcionalidades mais específicas, se necessário.</p>
+        </section>
+
+        <section id="flyweight">
+            <h2>Flyweight</h2>
+            <p>O padrão Flyweight minimiza o uso de memória compartilhando o máximo de dados possível entre objetos semelhantes. Ele é eficaz quando há muitos objetos semelhantes que podem compartilhar partes de seu estado para economizar memória.</p>
+            <h3>Dica:</h3>
+            <p>Use quando estiver lidando com um grande número de objetos similares que consomem muita memória. Certifique-se de que o Flyweight realmente traz benefícios significativos em termos de desempenho antes de aplicá-lo.</p>
+        </section>
+
+        <section id="proxy">
+            <h2>Proxy</h2>
+            <p>O padrão Proxy fornece um substituto ou representante para controlar o acesso a um objeto. Ele pode ser utilizado para adiar a criação de objetos pesados, controlar o acesso a objetos sensíveis ou adicionar funcionalidades de monitoramento.</p>
+            <h3>Dica:</h3>
+            <p>Use o Proxy quando precisar controlar o acesso a objetos, especialmente em casos de objetos que são caros para criar ou precisam de controle adicional para garantir segurança e performance.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
